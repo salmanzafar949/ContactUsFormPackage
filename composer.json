@@ -1,0 +1,13 @@
+{
+    "name": "salman/contactform",
+    "description": "A simple contact form package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Salman\\Contact\\": "src/"
+        }
+    }
+}
