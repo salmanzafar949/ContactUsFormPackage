@@ -18,7 +18,9 @@ class ContactServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         $this->mergeConfigFrom(__DIR__.'/config/contactform.php','contactform');
         $this->publishes([
-            __DIR__.'/config/contactform.php' => config_path('contactform.php')
+            __DIR__.'/config/contactform.php' => config_path('contactform.php'),
+            __DIR__.'/views/' => resource_path('views/vendor/contactform'),
+            __DIR__.'/database/migrations' => database_path('migrations')
         ]);
     }
 
